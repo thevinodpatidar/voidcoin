@@ -1,0 +1,31 @@
+<% include partials/header %>
+
+<div class="container">
+    <h1>Blocks</h1>
+    <table class="table table-hover table-light">
+        <thead class="thead-light">
+            <tr>
+                <th>TimeStamp</th>
+                <th>LastHash</th>
+                <th>Hash</th>
+                <th>Data</th>
+                <th>Nonce</th>
+                <th>Difficulty</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% data.forEach(function(block){ %>
+            <tr>
+                <td><%= block["timestamp"] %></td>
+                <td><%= block["lastHash"] %></td>
+                <td><%= block["hash"] %></td>
+                <td><%= block["data"] %></td>
+                <td><%= block["nonce"] %></td>
+                <td><%= block["difficulty"] %></td>
+            </tr>
+            <% }) %>
+        </tbody>
+    </table>
+</div>
+
+<% include partials/footer %>

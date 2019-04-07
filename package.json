@@ -1,0 +1,29 @@
+{
+  "name": "authdemo",
+  "version": "1.0.0",
+  "description": "Authentication Demo ",
+  "main": "app.js",
+  "scripts": {
+    "test": "jest --watchAll",
+    "dev-test": "nodemon dev-test",
+    "start": "node ./app/index.js",
+    "dev": "nodemon ./app/index.js"
+  },
+  "author": "Vinod Patidar",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "crypto-js": "^3.1.9-1",
+    "ejs": "^2.6.1",
+    "elliptic": "^6.4.1",
+    "express": "^4.16.4",
+    "express-session": "^1.15.6",
+    "mongoose": "^5.4.21",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
+    "passport-local-mongoose": "^5.0.1",
+    "secp256k1": "^3.6.2",
+    "uuid": "^3.3.2",
+    "ws": "^6.2.1"
+  }
+}

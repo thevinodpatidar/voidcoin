@@ -1,0 +1,28 @@
+<% include partials/header %>
+
+<div class="container">
+    <h1>Transactions</h1>
+    <table class="table table-hover table-light">
+        <thead class="thead-light">
+            <tr>
+                <th>ID</th>
+                <th>Timestamp</th>
+                <th>Amount</th>
+                <th>Address</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% data.forEach(function(block){ %>
+            <tr>
+                <td><%= block["id"] %></td>
+                <td><%= block["input"]["timestamp"] %></td>
+                <td><%= block["input"]["amount"] %></td>
+                <td><%= block["input"]["address"] %></td>
+                <td><a href="/mine-transactions">Add</a></td>
+            </tr>
+            <% }) %>
+        </tbody>
+    </table>
+</div>
+
+<% include partials/footer %>
